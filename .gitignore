@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.env
+.venv/
+venv/
+alpha_topup.db
+.DS_Store

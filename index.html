@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080b16">
+<title>ALPHA TOP UP — Gaming Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap nav"><a class="logo" href="#">👑 ALPHA <span>TOP UP</span><small>FAST • SIMPLE • GAMING</small></a><nav><a href="#store">Top Up</a><a href="#how">How it works</a><a href="#track">Track order</a><a href="#support">Support</a></nav><a class="button" href="#store">Order now ↗</a></div></header>
+<main class="wrap">
+<section class="hero"><div class="eyebrow">NEXT LEVEL GAMING EXPERIENCE</div><h1>POWER UP YOUR<br><span>GAME.</span> OWN THE BATTLE.</h1><p>Free Fire Diamonds and PUBG Mobile UC order portal. Choose a package, submit your player ID and follow your order status.</p><div class="pills"><span>🔥 Free Fire</span><span>🎯 PUBG Mobile</span><span>🇧🇩 Bangladesh</span></div></section>
+<div class="layout" id="store">
+<section class="panel">
+<h2>Choose your game</h2><p class="muted">Prices shown below are examples. Confirm the final price with the store before paying.</p>
+<div class="games"><button class="game active" data-game="ff">🔥 <b>Free Fire</b><small>Diamond packages</small></button><button class="game" data-game="pubg">🎯 <b>PUBG Mobile</b><small>UC packages</small></button></div>
+<label for="player">Player UID / Character ID</label><input id="player" placeholder="Enter your in-game ID" maxlength="25" autocomplete="off">
+<label for="region">Region / Server</label><select id="region"><option>Bangladesh</option><option>Other (confirm with support)</option></select>
+<label>Select package</label><div class="packages" id="packages"></div>
+<div class="notice">Never provide your game password, email password, OTP or recovery code. Top-up requires an eligible provider and a valid player ID.</div>
+</section>
+<aside class="panel summary"><h2>Order summary</h2><div class="line"><span>Game</span><b id="sumGame">Free Fire</b></div><div class="line"><span>Player UID</span><b id="sumUid">Not entered</b></div><div class="line"><span>Region</span><b id="sumRegion">Bangladesh</b></div><div class="line"><span>Package</span><b id="sumPack">100 Diamonds</b></div><div class="line"><span>Example price</span><b class="price" id="sumPrice">৳ 80</b></div>
+<h3>Manual payment</h3><p class="muted">Submit your order first. The store will provide its verified bKash/Nagad payment instructions. Never pay a number shown by an unverified person.</p>
+<label for="paymentMethod">Preferred method</label><select id="paymentMethod"><option>bKash</option><option>Nagad</option><option>Discuss with store</option></select>
+<label for="paymentRef">Payment transaction ID (after payment)</label><input id="paymentRef" placeholder="Optional at order creation" maxlength="100">
+<button class="button full" id="placeOrder">Create order request ↗</button><p class="muted tiny" id="orderMessage" role="status"></p>
+</aside></div>
+<section class="panel" id="track"><h2>Track an order</h2><p class="muted">Enter the order ID returned after creating an order.</p><div class="trackrow"><input id="trackId" placeholder="e.g. ALP-..."><button class="button" id="trackBtn">Check status</button></div><pre id="trackResult" class="result" aria-live="polite"></pre></section>
+<section class="three" id="how"><div class="panel">🛡️<h3>Safer ordering</h3><p class="muted">No game password or OTP is requested.</p></div><div class="panel">🧾<h3>Order tracking</h3><p class="muted">Check the latest status using your order ID.</p></div><div class="panel">💬<h3>Store support</h3><p class="muted">Confirm price, payment destination and availability with the store.</p></div></section>
+<section class="panel" id="support"><h2>Store support</h2><p class="muted">Configure the official store WhatsApp number in frontend/app.js. Until then, support links remain disabled.</p><button class="button secondary" id="supportBtn">Contact support</button></section>
+</main><footer><div class="wrap foot"><b>👑 ALPHA TOP UP</b><span>Independent storefront template. Not affiliated with Garena or PUBG/KRAFTON.</span><span>© <span id="year"></span> ALPHA TOP UP</span></div></footer>
+<script src="app.js"></script>
+</body></html>
